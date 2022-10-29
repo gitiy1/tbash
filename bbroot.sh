@@ -59,4 +59,4 @@ fi
 
 #run
 
-/home/caddy run --config /home/Caddyfile --adapter caddyfile
+/home/caddy run --config /home/Caddyfile --adapter caddyfile &
