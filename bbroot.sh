@@ -3,17 +3,7 @@
 #init
 apt update
 apt install wget unzip curl -y
-
-#enhance
-echo "* soft nproc 11000" >> /etc/security/limits.conf
-echo "* hard nproc 11000" >> /etc/security/limits.conf
-echo "* soft nofile 655350" >> /etc/security/limits.conf
-echo "* hard nofile 655350" >> /etc/security/limits.conf
-echo -e "系统优化成功！"
-echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
-echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
-sysctl -p
-echo -e "BBR启动成功！"'
+uuid=9831667d-e2fc-4022-a7ab-5fb9e0f1ee71
 
 #download
 ##caddy
