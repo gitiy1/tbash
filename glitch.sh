@@ -29,7 +29,7 @@ if [ $uuid ];then
 		output discard #关闭日志文件输出
 		level INFO
 	} 
-	servers :80 {
+	servers :3000 {
 		listener_wrappers {
 			trojan #caddy-trojan插件应用必须配置
 		}
@@ -41,7 +41,7 @@ if [ $uuid ];then
 	}
 }
 
-:80 {
+:3000 {
 
 	trojan {
 		connect_method
